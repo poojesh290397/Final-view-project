@@ -1,0 +1,78 @@
+*{
+font-family:arial;
+}
+
+.button_toggle{
+  text-align:center;
+}
+
+.button_toggle button{
+  font-size:25px;
+  padding:4px;
+  font-family:Arial;
+}
+
+.emi_eli{
+width:50%;
+height:340px;
+margin-top:40px;
+font-size:13px;
+margin-bottom:35px;
+}
+table{
+width:60%;
+margin:auto;
+padding:15px;
+background-color:#ffa366;
+font-family:calibri;
+font-size:35px;
+}
+
+table input{
+outline:0;}
+
+input{
+padding:5px;}
+
+.div_left{
+float:left;
+}
+
+.div_right{
+float:right;
+}
+
+
+button{
+font-size:20px;
+background-color:#ffa366;}
+
+input{
+margin:auto;
+font-size:17px;
+}
+
+.error{
+border-color:red;
+border-style:solid;}
+
+.invisible{
+display:none;
+}
+
+a
+{
+	font-style:none;
+}
+
+#eli_cal_head, #emi_cal_head{
+margin-top:50px;
+text-align:center;
+font-size:50px;
+}
+
+#apply_now{
+font-size:30px;
+background-color:#ffa366;
+border:3px solid dark green;
+}

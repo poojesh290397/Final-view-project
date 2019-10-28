@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:ctx="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        ">
+
+<import resource="spring-core.xml"/>
+
+<ctx:component-scan base-package="com.lti.pg.controller "></ctx:component-scan>
+<bean id="viewResolver"
+class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="prefix">
+		<value>/WEB-INF/jsps/</value>
+	</property>
+		<property name="suffix">
+		<value>.jsp</value>
+	</property>
+</bean>
+
+<bean id="exceptionMapping" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="mappedHandlers">
+			<set>
+				<ref bean="TestController" />
+			</set>
+		</property>
+		<property name="exceptionMappings">
+			<props>
+				<prop key="com.lti.pg.exception.LoanException">Errors</prop>
+				<prop key="java.lang.Exception">Errors</prop>
+			</props>
+		</property>
+	</bean>
+
+    <mvc:resources mapping="/resources/**" location="/resources/" cache-period="31556926"/>
+    
+    <mvc:resources location="file:D://tmpFiles/" mapping="/files/**"></mvc:resources>
+
+    <mvc:annotation-driven />
+
+</beans>

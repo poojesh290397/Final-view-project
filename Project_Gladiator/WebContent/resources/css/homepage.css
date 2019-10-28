@@ -1,0 +1,134 @@
+
+/* Add a black background color to the top navigation */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.logo{
+  top:5%;
+  width:100%;
+  float:left;
+}
+.topnav {
+  width:100%;
+  position: relative;
+  background-color:black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  margin:auto;
+  text-decoration:none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:#ffa366;
+  color:black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:#000080;
+  color:black;
+}
+
+
+.carousal{
+width:100%;
+display:block;
+}
+
+.carousal img{
+max-width:100%;
+max-height:650px;
+}
+
+.carousal.btn {
+  position:right;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:black;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.carousal.btn:hover {
+  background-color:black;
+}
+
+
+.features{
+background-color:white;
+overflow: hidden;
+}
+.features a{
+float: left;
+color: black;
+text-align: center;
+padding: 14px 16px;
+font-size: 17px;
+margin:auto;
+text-decoration:none;
+}
+
+.features a:hover {
+  background-color:#000080;
+  color:white;
+}
+
+.features a.active {
+  background-color:#000080;
+  color:black;
+}
+
+.feature-left{
+margin-right:auto;
+padding/*-right*/left:2%;
+background-color:#ffa366/*#ff9980*/;
+border-radius:12px;
+ height:40%;
+ width:45%;
+ float:right;
+  box-shadow:10px 10px 10px 5px grey;
+ padding:10px;
+ font-family:Arial;
+}
+
+.product-overview-article{
+  background-color:#ffa366/*#b3c6ff*/;
+  height:40%;
+  width:50%;
+  border-radius:12px;
+  float:left;
+  padding:10px;  
+  box-shadow:10px 10px 10px 5px grey;
+
+  /*left: 70%;*/
+}
+
+.content_product{
+	margin-bottom:130px;
+}
